@@ -1,0 +1,36 @@
+<html>
+    <head>
+
+    </head>
+    
+        <script>
+  
+    var tiktoker=
+        {
+        nazwisko :'Raczkowski',
+        imie :'Max',
+        wyświetlenia :'100000000',
+        zawod : 'tiktoker', 
+        wyświetl :function ()
+
+
+{
+
+document.write(this.nazwisko+ ' ' + this.imie+ ' ' + this.zawod + ' '+ this.wyświetlenia);
+},
+
+zarobki :function(){
+    document.write(this.wyświetlenia/1000 +'zł');  
+},
+zarobkirok :function(){
+    document.write((this.wyświetlenia/1000)*12 +'zł');  
+}
+}
+</script>
+<body></body>
+
+<input type="button" name="wyświetl" onclick="tiktoker.wyświetl()" value="uruchom"/> 
+<input type="button" name="wyświetl" onclick="tiktoker.zarobki()" value="uruchom"/> 
+<input type="button" name="wyświetl" onclick="tiktoker.zarobkirok()" value="uruchom"/> 
+</body>
+</html>
