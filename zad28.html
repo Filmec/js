@@ -1,0 +1,51 @@
+<html>
+ <head>
+ </head>
+<body>
+        <script> 
+            function samochod(marka, rok, moc, typ){
+                this.marka = marka;
+                this.rok = rok;
+                this.moc = moc;
+                this.typ = typ;
+            }
+            samochod.prototype.wypisz = function(){document.write("Marka: "+this.marka+" Rok: "+this.rok+" Moc: "+this.moc+" Typ: "+this.typ+"<br>");}
+                var  w1= new samochod('BMW','2020','250','sedan');
+                w1.wypisz();
+                var  w2= new samochod('Audi','2019','170','kombi');
+                w2.wypisz();
+                var  w3= new samochod('Mercedes','2021','300','suv');
+                w3.wypisz();
+
+                function ciezarowka(kolor, ladownosc, marka, moc){
+                this.kolor = kolor;
+                this.ladownosc = ladownosc;
+                this.marka = marka;
+                this.moc = moc;
+            }
+            document.write("<br>");
+            ciezarowka.prototype.wypisz = function(){document.write("kolor: "+this.kolor+" ladownosc: "+this.ladownosc+" marka: "+this.marka+" moc: "+this.moc+"<br>");}
+                var  w1= new ciezarowka('czerwony','20','volvo','500');
+                w1.wypisz();
+                var  w2= new ciezarowka('zielona','15','mercedes','600');
+                w2.wypisz();
+                var  w3= new ciezarowka('niebieska','25','man','450');
+                w3.wypisz();
+
+                function dom(pokoje, metry, rodzaj, lokalizacja){
+                this.pokoje = pokoje;
+                this.metry = metry;
+                this.rodzaj = rodzaj;
+                this.lokalizacja = lokalizacja;
+            }
+            document.write("<br>");
+            dom.prototype.wypisz = function(){document.write("pokoje: "+this.pokoje+" metry: "+this.metry+" rodzaj: "+this.rodzaj+" lokalizacja: "+this.lokalizacja+"<br>");}
+                var  w1= new dom('4','90','mieszkanie','Gdansk');
+                w1.wypisz();
+                var  w2= new dom('5','105','blok','Sopot');
+                w2.wypisz();
+                var  w3= new dom('3','55','mieszkanie','Gdynia');
+                w3.wypisz();
+</script>
+ </body>
+</html>

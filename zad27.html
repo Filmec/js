@@ -1,0 +1,223 @@
+<html>
+ <head>
+ <script type="text/javascript">
+ 
+ var samochod = { 
+ marka: 'BWM',
+rok: '2020',
+moc: '250 KM',
+samochod_wyswietl_mech: function (){
+ document.write(this.marka + ' ' + this.rok+ ' ' + this.moc+ '<br>')
+ }
+}
+
+var ciezarowka = { 
+kolor: 'czerwona',
+ladownosc: '20 ton',
+marka: 'volvo',
+ciezarowka_wyswietl_mech: function (){
+ document.write(this.ladownosc + ' ' + this.kolor+ ' ' + this.marka+ '<br>')
+ }
+}
+
+var dom = { 
+pokoje: '4 pokoje',
+metry: '90 m',
+rodzaj: 'jednorodzinny',
+dom_wyswietl_mech: function (){
+ document.write(this.metry + ' ' + this.pokoje + ' ' + this.rodzaj+ '<br>')
+ }
+}
+
+var pudelko = { 
+rozmiar: 'duze',
+kolor: 'czerwone',
+material: 'plastik',
+pudelko_wyswietl_mech: function (){
+ document.write(this.rozmiar + ' ' + this.kolor +  ' ' + this.material+'<br>')
+ }
+}
+
+var wazon = { 
+kształt: 'okragly',
+rozmiar: 'mały',
+kolor: 'czarny',
+wazon_wyswietl_mech: function (){
+ document.write(this.kształt + ' ' + this.rozmiar + ' ' + this.kolor+ '<br>')
+ }
+}
+
+var pociag = { 
+rodzaj: 'towarowy',
+ladunek: 'wegiel',
+kolor: 'szary',
+pociag_wyswietl_mech: function (){
+document.write(this.rodzaj + ' ' + this.ladunek +' ' +  this.kolor+ '<br>')
+ }
+}
+
+
+var mebel = { 
+rodzaj: 'stol',
+ksztalt: 'okragly',
+kolor: 'bialy',
+mebel_wyswietl_mech: function (){
+document.write(this.rodzaj + ' ' + this.ksztalt +' ' +  this.kolor+ '<br>')
+ }
+}
+
+var autobus = { 
+rodzaj: 'miejski',
+rozmiar: 'maly',
+kolor: 'czerwony',
+autobus_wyswietl_mech: function (){
+document.write(this.rodzaj + ' ' + this.rozmiar +' ' +  this.kolor+ '<br>')
+ }
+}
+
+
+var komputer = { 
+procesor: 'intel',
+ram: '32 GB',
+grafika: 'nvidia',
+komputer_wyswietl_mech: function (){
+document.write(this.procesor + ' ' + this.ram +' ' + this.grafika+ '<br>')
+ }
+}
+
+var monitor = { 
+producent: 'dell',
+rozmiar: '27 cali',
+zlacze: 'hdmi',
+monitor_wyswietl_mech: function (){
+document.write(this.producent + ' ' + this.rozmiar +' ' + this.zlacze+  '<br>')
+ }
+}
+
+var ruter = { 
+producent: 'Tp-link',
+model: 'TD-8840T',
+czestotliwosc: '2,4 GHz i 5 GHz',
+ruter_wyswietl_mech: function (){
+document.write(this.producent + ' ' + this.model +' ' + this.czestotliwosc+ '<br>')
+ }
+}
+
+var telefon = { 
+producent: 'samsung',
+model: 's12',
+rozmiar: '5.5 cali',
+telefon_wyswietl_mech: function (){
+document.write(this.producent + ' ' + this.model +' ' + this.rozmiar+  '<br>')
+ }
+}
+
+var spodnie = { 
+producent: 'adidas',
+dlugosc: 'krotkie',
+kolor: 'czarne',
+spodnie_wyswietl_mech: function (){
+document.write(this.producent + ' ' + this.dlugosc +' ' +  this.kolor+ '<br>')
+ }
+}
+
+var owoc = { 
+rodzaj: 'jablko',
+kolor: 'czerwone',
+wielkosc: 'duze',
+owoc_wyswietl_mech: function (){
+document.write(this.rodzaj + ' ' + this.kolor +' ' +  this.wielkosc+ '<br>')
+ }
+}
+
+var wiezowiec = { 
+pietra: '12',
+rok: '2018',
+ilosc: '120 mieszkan',
+wiezowiec_wyswietl_mech: function (){
+document.write(this.pietra + ' ' + this.rok +' ' +  this.ilosc+ '<br>')
+ }
+}
+
+samochod.samochod_wyswietl_mech();
+samochod.typ='sedan';
+samochod.samochod_wyswietl_mech=function() { document.write('Typ: ' + this.typ + '<br>'+ '<br>')}
+samochod.samochod_wyswietl_mech();
+
+ciezarowka.ciezarowka_wyswietl_mech();
+ciezarowka.moc='500';
+ciezarowka.ciezarowka_wyswietl_mech=function() { document.write('moc: ' + this.moc + ' KM <br>'+ '<br>')}
+ciezarowka.ciezarowka_wyswietl_mech();
+
+dom.dom_wyswietl_mech();
+dom.lokalizacja='Gdańsk';
+dom.dom_wyswietl_mech=function() { document.write('Lokalizacja: ' + this.lokalizacja + '<br>'+ '<br>')}
+dom.dom_wyswietl_mech();
+
+pudelko.pudelko_wyswietl_mech();
+pudelko.ksztalt='kwadrat';
+pudelko.pudelko_wyswietl_mech=function() { document.write('Ksztalt: ' + this.ksztalt + '<br>'+ '<br>')}
+pudelko.pudelko_wyswietl_mech();
+
+wazon.wazon_wyswietl_mech();
+wazon.wzor='kwiaty';
+wazon.wazon_wyswietl_mech=function() { document.write('Wzor: ' + this.wzor + '<br>'+ '<br>')}
+wazon.wazon_wyswietl_mech();
+
+pociag.pociag_wyswietl_mech();
+pociag.wagony='20';
+pociag.pociag_wyswietl_mech=function() { document.write('Liczba wagonow: ' + this.wagony + '<br>'+ '<br>')}
+pociag.pociag_wyswietl_mech();
+
+mebel.mebel_wyswietl_mech();
+mebel.srednica='45';
+mebel.mebel_wyswietl_mech=function() { document.write('Srednica: ' + this.srednica + ' cm<br>'+ '<br>')}
+mebel.mebel_wyswietl_mech();
+
+autobus.autobus_wyswietl_mech();
+autobus.miejsca='30';
+autobus.autobus_wyswietl_mech=function() { document.write('Liczba miejsc: ' + this.miejsca + '<br>'+ '<br>')}
+autobus.autobus_wyswietl_mech();
+
+komputer.komputer_wyswietl_mech();
+komputer.dysk='SSD';
+komputer.komputer_wyswietl_mech=function() { document.write('Dysk: ' + this.dysk + '<br>'+ '<br>')}
+komputer.komputer_wyswietl_mech();
+
+monitor.monitor_wyswietl_mech();
+monitor.odswiezanie='144';
+monitor.monitor_wyswietl_mech=function() { document.write('Odswiezanie: ' + this.odswiezanie + ' Hz<br>'+ '<br>')}
+monitor.monitor_wyswietl_mech();
+
+ruter.ruter_wyswietl_mech();
+ruter.rodzaj='bezprzewodowy';
+ruter.ruter_wyswietl_mech=function() { document.write('Rodzaj: ' + this.rodzaj + '<br>'+ '<br>')}
+ruter.ruter_wyswietl_mech();
+
+telefon.telefon_wyswietl_mech();
+telefon.pamiec='8';
+telefon.telefon_wyswietl_mech=function() { document.write('Pamiec RAM: ' + this.pamiec + ' GB<br>'+ '<br>')}
+telefon.telefon_wyswietl_mech();
+
+spodnie.spodnie_wyswietl_mech();
+spodnie.rozmiar='L';
+spodnie.spodnie_wyswietl_mech=function() { document.write('Rozmiar: ' + this.rozmiar + '<br>'+ '<br>')}
+spodnie.spodnie_wyswietl_mech();
+
+
+owoc.owoc_wyswietl_mech();
+owoc.kraj='Polska';
+owoc.owoc_wyswietl_mech=function() { document.write('Kraj pochodzenia: ' + this.kraj + '<br>'+ '<br>')}
+owoc.owoc_wyswietl_mech();
+
+
+wiezowiec.wiezowiec_wyswietl_mech();
+wiezowiec.miejsce='Gdansk';
+wiezowiec.wiezowiec_wyswietl_mech=function() { document.write('Miasto: ' + this.miejsce + '<br>'+ '<br>')}
+wiezowiec.wiezowiec_wyswietl_mech();
+</script>
+
+ </head>
+<body>
+</body>
+</html>
