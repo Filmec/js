@@ -6,11 +6,8 @@
            var suma;
            var a=parseFloat(liczbaa.value);
            var b=parseFloat(liczbab.value);
-           suma= Math.sqrt( a*a+b*b);
-          var alfa = Math.atan(a/b)*180/Math.PI;
-          var d = Math.round(alfa*100)/100
+           suma= Math.sqrt( a*a-b*b);
            document.write("Drabina ="  +suma+ "<br>" );
-           document.write("Alfa ="  +d+ "<br>" );
           }
        </script>
   
@@ -19,4 +16,3 @@
    <input type="button" name="oblicz" onclick="oblicz()" value="uruchom"/>
    </body>      
    </html>
-   
