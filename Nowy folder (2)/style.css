@@ -1,0 +1,56 @@
+#title {
+    position: absolute;
+width: 100%;
+height: 15%;
+left: 0px;
+top: 0px;
+
+background: rgb(0, 255, 21);
+}
+#lewy {
+    position: absolute;
+width: 50%;
+height: 60%;
+left: 0px;
+top: 15%;
+text-align: center;
+font-size: 35px;
+
+background: rgb(252, 0, 0);
+}
+#prawy {
+    position: absolute;
+width: 50%;
+height: 60%;
+left: 50%;
+top: 15%;
+
+background: rgb(0, 153, 255);
+}
+
+#stopka {
+    position: absolute;
+width: 100%;
+height: 25%;
+left: 0%;
+top: 75%;
+
+background: rgb(50, 0, 13);
+}
+
+
+#kon{
+    width: 40%;
+
+
+}
+#smok{
+
+ margin-left: 45%;
+ margin-top: -150px;
+   
+}
+
+center{
+    font-size: 35px;
+}

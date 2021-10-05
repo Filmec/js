@@ -1,0 +1,72 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+    <div id="title">
+        <a href="https://pl.wikipedia.org/wiki/Burgundia"><img src="1.png" alt="tiktok" ></a>
+        <center>Bitwy Europejskie</center>
+    </div> 
+  </nav>
+<div id="lewy">
+
+</div>
+
+<div id="prawy">  
+    Podaj liczbe artylerystow : <input  id="art"><br>
+    Podaj liczbe kawalerzystow  : <input  id="kaw"><br>
+    Podaj liczbe muszkieterow: <input  id="mus"><br>
+   
+    <button type="submit "value="oblicz" onclick="oblicz()" >wyswietl</button>
+    </form>
+    <script>
+        function kolor(){
+            var kolor = Math.floor(Math.random()*99999)+22222;
+            document.getElementById("title").style.color="#"+kolor;
+        }
+        function oblicz(){
+        kolor();   
+        var a = parseInt(art.value);
+        var b = parseInt(kaw.value);
+        var c = parseInt(mus.value);
+       
+        var d = Math.round(Math.random()*18+2);
+
+        var e = Math.pow(a,d);
+        var f = Math.pow(b,d);
+        var g = Math.pow(c,d);
+         
+        
+
+
+
+
+        lewy.innerHTML="Nasza armia sklada sie z <br>"+a+ " artylerzystow <br>"+b+ " kawalerzystow <br>" + c + " muszkietrow <br><br>"+"Armia wroga sklada sie z <br> "+e + " artylerzystow <br>"+f +" kawalerzystow <br>"+g+ " muszkietrow <br><br>";
+        }
+        </script>
+</div>
+
+
+<div id="stopka">
+    <div id="kon">
+    <img src="kon.gif" alt="kon" class="kon">
+
+</div> 
+    <div id="smok">
+    <img src="smok.gif" alt="smok">
+</div> 
+</div> 
+
+
+
+
+
+    
+
+
+
+
+</body>
+</html>
