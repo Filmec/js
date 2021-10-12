@@ -1,0 +1,71 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+    <div id="lewy">
+    </div> 
+
+    </nav>
+<div class="prawy">
+  Nick<input type="text" id="nick">  <br>
+  Klasa<select id="klas" onchange="klasy()" >
+    <option value="1" >Barbarzynca</option>
+    <option value="2">Druid </option>
+    <option value="3" >Paladyn</option>
+    <option value="4" >Mnich</option>
+</select>
+  
+    
+<script>
+
+    function klasa(HP,MANA,S,A,GOLD,Talent,Zdolnosc, Zdolnosc2,Zdolnosc3,Zdolnosc4,Zdolnosc5,Zdolnosc6){
+    this.HP = HP; 
+    this.MANA = MANA;
+    this.S = S;
+    this.A = A;
+    this.GOLD = GOLD;
+    this.Talent = Talent;
+    this.Zdolnosc = Zdolnosc;
+    this.Zdolnosc2 = Zdolnosc2;
+    this.Zdolnosc3 = Zdolnosc3;
+    this.Zdolnosc4 = Zdolnosc4;
+    this.Zdolnosc5 = Zdolnosc5;
+    this.Zdolnosc6 = Zdolnosc6;
+
+    }
+    Barbarzynca=new klasa(35, 23,43 , 15, 25,"Rana","Masakra","Szał","Barbarzyński Ryk","Dziki Opór","Skrwawienie","Dziki Sprint");
+    Druid=new klasa(35, 23, 64, 45, 25, "Przebicie","Przemiana","Przemiana: Niedźwiedź","Druidzki Niedźwiedzi Ryk","Przemiana: Dzik","Druidzka Regeneracja Dzika","Przemiana: Jeleń");
+    Paladyn=new klasa(35, 42, 12, 5, 25, "Przebicie","Wiara i Przekonanie","Płomienie Poświęcenia","Żarliwe Skupienie","Nakładanie Rąk","Żarliwa Szarża","Gorliwa Wytrwałość");
+    Mnich=new klasa(35, 27, 72, 52, 25, "Przebicie","Niepojęte Cierpienie","Szybkie Ciosy","Dosięgnięcie","Kołowrót","Długi Krok","Siła Cierpienia");
+   
+
+
+    
+    function klasy(){
+        var a=document.getElementById("klas");
+        console.log(a);
+        switch(a.value){
+
+            case '1': dol.innerHTML="HP " + Barbarzynca.HP + "<br>MANA " + Barbarzynca.MANA+ "<br> S " + Barbarzynca.S+ "<br> A " + Barbarzynca.A+ "<br>GOLD " + Barbarzynca.GOLD; lewy.innerHTML="<img src=1.png>";dolp.innerHTML="Talent: " + Barbarzynca.Talent + "<br>Zdolnosci: " + Barbarzynca.Zdolnosc+ "<br>" + Barbarzynca.Zdolnosc2+ "<br>" + Barbarzynca.Zdolnosc3+ "<br>" + Barbarzynca.Zdolnosc4+ "<br>" + Barbarzynca.Zdolnosc5+ "<br> " + Barbarzynca.Zdolnosc6; break;
+            case '2': dol.innerHTML="HP " + Druid.HP + "<br>MANA " + Druid.MANA+ "<br> S " + Druid.S+ "<br> A " + Druid.A+ "<br>GOLD " + Druid.GOLD; lewy.innerHTML="<img src=2.png>"; break;
+            case '3': dol.innerHTML="HP " + Paladyn.HP + "<br>MANA " + Paladyn.MANA+ "<br> S " + Paladyn.S+ "<br> A " + Paladyn.A+ "<br>GOLD " + Paladyn.GOLD; lewy.innerHTML="<img src=3.png>"; break;
+            case '4': dol.innerHTML="HP " + Mnich.HP + "<br>MANA " + Mnich.MANA+ "<br> S " + Mnich.S+ "<br> A " + Mnich.A+ "<br>GOLD " + Mnich.GOLD;  lewy.innerHTML="<img src=4.png>"; break;
+            default: dol.innerHTML="Error";
+        }
+    }
+    </script>  
+</div>
+
+<div id="dol">
+    
+</div>
+
+<div id="dolp">
+    
+</div>
+
+</body>
+</html>

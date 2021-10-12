@@ -1,0 +1,39 @@
+#lewy {
+    position: absolute;
+width: 25%;
+height: 25%;
+left: 0px;
+top: 0px;
+
+background: black;
+}
+
+.prawy{
+    position: absolute;
+width: 75%;
+height: 25%;
+left: 25%;
+top: 0px;
+
+background: rgb(72, 73, 73);
+}
+
+
+#dol{
+    position: absolute;
+width: 25%;
+height: 75%;
+left: 0%;
+top: 25%;
+
+background: rgb(72, 73, 73);
+}
+#dolp{
+    position: absolute;
+width: 75%;
+height: 75%;
+left: 25%;
+top: 25%;
+color: red;
+background: black;
+}
