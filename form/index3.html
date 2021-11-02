@@ -1,0 +1,29 @@
+<html>
+<head>
+
+
+</head>
+
+<body>
+    <select name="cars" id="cars">
+        <option value="miecz">miecz</option>
+        <option value="tarcza">tarcza</option>
+        <option value="czapka">czapka</option>
+        <option value="buty">buty</option>
+      </select>
+<input type="button" onclick="o()" value="oblicz">
+</body>
+<script>
+function o() {
+  var x = document.getElementById("a").checked;
+  var c = document.getElementById("b").checked;
+  var v = document.getElementById("c").checked;
+  var wynik = cena.value*ilosc.value;
+  if (x== true){wynik*=0.95}
+  if (c== true){wynik*=0.90}
+  if (v== true){wynik*=0.80}
+ alert(wynik);
+}
+</script>
+</html>
+
