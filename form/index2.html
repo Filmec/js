@@ -1,0 +1,46 @@
+<html>
+<head>
+<style>
+
+</style>
+
+</head>
+
+<body>
+    <form>
+Armor <input type="number" id="cena" value="cena"><br>
+DMG <input type="number" id="ilosc" value="ilosc"><br>
+5%<input type="radio" name="a" value="5" >&nbsp &nbsp
+10%<input type="radio" name="a" value="10" >&nbsp &nbsp
+15%<input type="radio" name="a" value="20" ><br>
+<input type="button" onclick="o(a)" value="oblicz">
+</form>
+<table>
+    <tr>
+    <td id="tabela"> 
+        
+
+        
+    </td>
+</tr>
+</table>
+
+</body>
+<script>
+function o(a) {
+  var wynik = cena.value;
+  if (a[0].checked){
+    wynik=1.05*wynik;
+  }
+  if (a[1].checked){
+    wynik=1.1*wynik;
+  }
+  if (a[2].checked){
+    wynik=1.15*wynik;
+  }
+  var xd =Math.round( wynik-ilosc.value)/1;
+ 
+ tabela.innerHTML=xd;
+}
+</script>
+</html>

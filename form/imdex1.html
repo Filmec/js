@@ -1,0 +1,51 @@
+<html>
+<head>
+<style>
+    table{
+       
+        border: solid;
+        border-width: 2px;
+        
+       
+    }
+</style>
+
+</head>
+
+<body>
+    <form>
+Cena <input type="number" id="cena" value="cena"><br>
+Ilosc <input type="number" id="ilosc" value="ilosc"><br>
+5%<input type="radio" name="a" value="5" >&nbsp &nbsp
+10%<input type="radio" name="a" value="10" >&nbsp &nbsp
+20%<input type="radio" name="a" value="20" ><br>
+<input type="button" onclick="o(a)" value="oblicz">
+</form>
+<table>
+    <tr>
+    <td id="tabela"> 
+        
+
+        
+    </td>
+</tr>
+</table>
+
+</body>
+<script>
+function o(a) {
+  var wynik = cena.value*ilosc.value;
+  if (a[0].checked){
+    wynik=0.95*wynik;
+  }
+  if (a[1].checked){
+    wynik=0.90*wynik;
+  }
+  if (a[2].checked){
+    wynik=0.80*wynik;
+  }
+ tabela.innerHTML=wynik;
+ 
+}
+</script>
+</html>
