@@ -1,0 +1,27 @@
+<html>
+<head>
+
+
+</head>
+
+<body>
+Cena <input type="number" id="cena" value="cena"><br>
+Ilosc <input type="number" id="ilosc" value="ilosc"><br>
+5%<input type="checkbox" id="a" >&nbsp &nbsp
+10%<input type="checkbox" id="b" >&nbsp &nbsp
+20%<input type="checkbox" id="c" ><br>
+<input type="button" onclick="o()" value="oblicz">
+</body>
+<script>
+function o() {
+  var x = document.getElementById("a").checked;
+  var c = document.getElementById("b").checked;
+  var v = document.getElementById("c").checked;
+  var wynik = cena.value*ilosc.value;
+  if (x== true){wynik*=0.95}
+  if (c== true){wynik*=0.90}
+  if (v== true){wynik*=0.80}
+ alert(wynik);
+}
+</script>
+</html>
